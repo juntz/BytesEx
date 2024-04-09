@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Juntz.BytesEx", "Juntz.BytesEx\Juntz.BytesEx.csproj", "{7FC42DD9-035B-4312-9306-DA29B3D66D77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Juntz.BytesEx.Tests", "Juntz.BytesEx.Tests\Juntz.BytesEx.Tests.csproj", "{B3D50DA3-11B8-4465-A9E7-2BA5E85EDA89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FC42DD9-035B-4312-9306-DA29B3D66D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FC42DD9-035B-4312-9306-DA29B3D66D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FC42DD9-035B-4312-9306-DA29B3D66D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FC42DD9-035B-4312-9306-DA29B3D66D77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3D50DA3-11B8-4465-A9E7-2BA5E85EDA89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3D50DA3-11B8-4465-A9E7-2BA5E85EDA89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3D50DA3-11B8-4465-A9E7-2BA5E85EDA89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3D50DA3-11B8-4465-A9E7-2BA5E85EDA89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
