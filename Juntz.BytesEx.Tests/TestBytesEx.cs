@@ -51,6 +51,36 @@ public class TestBytesEx
             );
     }
 
+    [Test]
+    public void RightShift_GiveRandomBytes_SameAsBitArrayResult(
+        [Values(0, 1, 2)] int length, [Values(0, 1, 8, 9)] int count)
+    {
+        AssertBinaryOperationUsingBitArrayAndRandomBytes(
+            length,
+            (a, _) => a.RightShift(count),
+            (a, _) => a.RightShift(count)
+            );
+    }
+
+    [Test]
+    public void LeftShift_GiveRandomBytes_SameAsBitArrayResult(
+        [Values(0, 1, 2)] int length, [Values(0, 1, 8, 9)] int count)
+    {
+        AssertBinaryOperationUsingBitArrayAndRandomBytes(
+            length,
+            (a, _) => a.LeftShift(count),
+            (a, _) => a.LeftShift(count)
+            );
+    }
+
+    [Test]
+    public void ExtractByte_GiveSample_SameAsExpected()
+    {
+        var actual = BytesEx.ExtractByte([7, 1], 1);
+        var expected = 131;
+        Assert.That(actual, Is.EqualTo(expected));
+    }
+
     private static void AssertBinaryOperationUsingBitArrayAndRandomBytes(
         int bytesLength,
         Action<byte[], byte[]> byteOper,
